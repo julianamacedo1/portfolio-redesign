@@ -1,11 +1,11 @@
-html,
-body {
+html {
     max-width: 100%;
     overflow-x: hidden;
 }
 body {
     background-color: #F8F2E2;
     color: #1A1A1A;
+    margin: 0px;
 }
 h1 {
     font-family: menco,sans-serif;
@@ -17,10 +17,16 @@ p {
     font-weight: 500;
     font-style: normal;
 }
+footer {
+    height: 100px;
+}
 /*navigation*/
+header {
+    margin-bottom: 50px;
+}
 nav {
     float: right;
-    padding: 80px;
+    padding: 70px;
 }
 .nav-item {
     padding: 15px;
@@ -36,4 +42,32 @@ nav {
 .logo {
     width: 10%;
     padding: 30px;
+}
+/*home page content*/
+.bio-para {
+    background-color: #BED3D6;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px;
+    border: 2px solid #1A1A1A;
+}
+/*work on homepage*/
+.work-section {
+    margin-top: 70px;
+}
+.work-item {
+    height: 500px;
+    border-top: 2px solid #1A1A1A;
+    border-bottom: 2px solid #1A1A1A;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.mockup-1 {
+    width: 30%;
+    vertical-align: middle;
+    
 }
