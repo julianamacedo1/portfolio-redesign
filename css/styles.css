@@ -1,0 +1,39 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    background-color: #F8F2E2;
+    color: #1A1A1A;
+}
+h1 {
+    font-family: menco,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+p {
+    font-family: menco,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/*navigation*/
+nav {
+    float: right;
+    padding: 80px;
+}
+.nav-item {
+    padding: 15px;
+    margin-left: 20px;
+    background-color: #F8F2E2;
+    border: 2px solid #1A1A1A;
+    font-family: menco,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+/*logo*/
+.logo {
+    width: 10%;
+    padding: 30px;
+}
