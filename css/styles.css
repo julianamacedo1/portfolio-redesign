@@ -12,6 +12,11 @@ h1 {
     font-weight: 500;
     font-style: normal;
 }
+h2 {
+    font-family: menco,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
 p {
     font-family: menco,sans-serif;
     font-weight: 500;
@@ -19,6 +24,7 @@ p {
 }
 footer {
     height: 100px;
+    border-top: 2px solid #1A1A1A;
 }
 /*navigation*/
 header {
@@ -59,7 +65,7 @@ nav {
 .work-item {
     height: 500px;
     border-top: 2px solid #1A1A1A;
-    border-bottom: 2px solid #1A1A1A;
+    width: 100%;
 }
 .helper {
     display: inline-block;
@@ -68,6 +74,18 @@ nav {
 }
 .mockup-1 {
     width: 30%;
+    height: auto;
+    display: inline-block;
     vertical-align: middle;
-    
+    border: 2px solid #1A1A1A;
+    margin: 20px;
+}
+.work-para {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid #1A1A1A;
+    padding: 40px;
+    margin: 20px;
 }
