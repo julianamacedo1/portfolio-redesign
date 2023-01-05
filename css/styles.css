@@ -49,7 +49,6 @@ nav {
     float: right;
 }
 .nav-item {
-    width: 80px;
     height: 50px;
     background-color: #B2BB8A;
     font-family: menco,sans-serif;
@@ -57,14 +56,15 @@ nav {
     font-style: normal;
     font-size: 16px;
     border: 0px;
-    border-radius: 50%;
-    margin-left: 10px;
-    /*border: 2px solid #1A1A1A;*/
+    border-bottom: 3px solid #B2BB8A;
+    margin-left: 32px;
 }
 .nav-item:hover {
-    background-color: #ffffff;
+    background-color: #B2BB8A;
     cursor: pointer;
     transition: 0.5s;
+    border-bottom: 3px solid #FFFFFF;
+    color: #FFFFFF;
 }
 /*logo*/
 .logo {
@@ -82,16 +82,6 @@ nav {
     padding: 50px;
 }
 /*work on homepage*/
-.work-section-title {
-    background-color: #BED3D6;
-    border-top: 2px solid #1A1A1A;
-    border-bottom: 2px solid #1A1A1A;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 30px;
-    text-align: center;
-}
 .work-section {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -140,4 +130,36 @@ nav {
     margin-left: auto;
     padding: 50px;
     text-decoration: none;
+}
+
+/*RESPONSIVE SIZES*/
+
+/*tablet*/
+@media screen and (max-width: 768px) {
+
+/*navigation*/
+
+/*home page content*/
+.para {
+    padding: 20px;
+}
+/*work on homepage*/
+.mockup-1 {
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px;
+    /*border: 2px solid #1A1A1A;*/
+}
+.work-para {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+}
+
 }
