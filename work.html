@@ -6,16 +6,20 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Juliana Macedo</title>
 </head>
-<header>
+<div class="topnav">
     <a href="index.html">
         <img class="logo" src="logos/jm-logo-black.png" alt="juliana macedo logo">
     </a>
-    <nav>
+    <div id="links">
         <button class="nav-item" onclick="document.location='index.html'">home</button>
         <button class="nav-item" onclick="document.location='work.html'" style="border-bottom: 3px solid #1A1A1A;">work</button>
         <button class="nav-item" onclick="document.location='contact.html'">contact</button>
-    </nav>
-</header>
+    </div>
+    <!-- mobile nav -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
 <body>
     <div class="para"><h2>Here's some of my work</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
     <div class="work-section">
@@ -39,4 +43,14 @@
 <footer>
     <p>Juliana Macedo's Portfolio 2023</p>
 </footer>
+<script>
+    function myFunction() {
+      var x = document.getElementById("links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+</script>
 </html>

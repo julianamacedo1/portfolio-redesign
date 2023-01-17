@@ -35,8 +35,9 @@ footer {
     background-color: #FFD587;
     /*border-top: 2px solid #1A1A1A;*/
 }
+
 /*navigation*/
-header {
+.topnav {
     margin-bottom: 20px;
     background-color: #B2BB8A;
     /*border-bottom: 2px solid #1A1A1A;*/
@@ -45,7 +46,7 @@ header {
     padding-left: 60px;
     padding-right: 60px;
 }
-nav {
+#links {
     float: right;
 }
 .nav-item {
@@ -68,14 +69,11 @@ nav {
 }
 /*logo*/
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 56px;
+    height: 56px;
 }
 /*home page content*/
 .para {
-    /*background-color: #BED3D6;
-    border-top: 2px solid #1A1A1A;
-    border-bottom: 2px solid #1A1A1A;*/
     width: 90%;
     margin-right: auto;
     margin-left: auto;
@@ -101,7 +99,6 @@ nav {
     display: inline-block;
     vertical-align: middle;
     margin: 20px;
-    /*border: 2px solid #1A1A1A;*/
 }
 .work-para {
     width: 50%;
@@ -134,11 +131,15 @@ nav {
 
 /*RESPONSIVE SIZES*/
 
-/*tablet*/
-@media screen and (max-width: 768px) {
-
+/*TABLET*/
+@media screen and (min-width: 768px) {
 /*navigation*/
-
+.fa-bars:before {
+    display: none;
+}
+.topnav a.icon {
+    display: none;
+}
 /*home page content*/
 .para {
     padding: 20px;
@@ -161,5 +162,100 @@ nav {
     margin: 20px;
     text-align: left;
 }
-
 }
+
+/*MOBILE L*/
+@media screen and (max-width: 425px) {
+    /*mobile navigation*/
+    .topnav #links {
+        display: none;
+    }
+    .topnav a {
+        color: #1A1A1A;
+        padding: 0;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .icon {
+        color: #1A1A1A;
+    }
+    .topnav a.icon {
+        background: #B2BB8A;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 38px;
+    }
+    .fa-bars:before {
+        font-size: 32px;
+    }
+    /*navigation*/
+    .topnav {
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+        background-color: #B2BB8A;
+        /*border-bottom: 2px solid #1A1A1A;*/
+        padding: 24px;
+    }
+    #links {
+        float: left;
+        padding-top: 24px;
+        margin-left: -32px;
+    }
+    .nav-item {
+        height: 50px;
+        background-color: #B2BB8A;
+        font-family: menco,sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+        border: 0px;
+        border-bottom: 3px solid #B2BB8A;
+        margin-left: 32px;
+    }
+    .nav-item:hover {
+        background-color: #B2BB8A;
+        cursor: pointer;
+        transition: 0.5s;
+        border-bottom: 3px solid #FFFFFF;
+        color: #FFFFFF;
+    }
+    /*logo*/
+    .logo {
+        width: 56px;
+        height: 56px;
+    }
+    /*home page content*/
+    .para {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+    }
+    /*work on homepage*/
+    .work-section {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .mockup-1 {
+        width: 80%;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0px;
+    }
+    .work-para {
+        width: 80%;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+        padding-bottom: 20px;
+        padding-top: 0px;
+        margin: 0px;
+        text-align: left;
+    }
+
+    }

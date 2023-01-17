@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/rpp3bzo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Juliana Macedo</title>
 </head>
-<header>
+<div class="topnav">
     <a href="index.html">
         <img class="logo" src="logos/jm-logo-black.png" alt="juliana macedo logo">
     </a>
-    <nav>
+    <div id="links">
         <button class="nav-item" onclick="document.location='index.html'" style="border-bottom: 3px solid #1A1A1A;">home</button>
         <button class="nav-item" onclick="document.location='work.html'">work</button>
         <button class="nav-item" onclick="document.location='contact.html'">contact</button>
-    </nav>
-</header>
+    </div>
+    <!-- mobile nav -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
 <body>
     <div class="para"><h2>Hey! My name is Juliana Macedo</h2><p>I'm a recent graduate from the University of Central Florida, Product Design intern, and UX/UI bootcamp teaching assistant. I have a lot of creative energy that I love putting into all my work, whether it be my web designs, app designs, graphic designs, or anything else I produce. This website is an example of some of the projects I've worked on at UCF, personal projects, freelance work, and more.</p></div>
     <div class="work-section">
@@ -27,8 +32,8 @@
         </div>
         <div class="work-item">
             <span class="helper"></span>
-            <div class="work-para"><h2>That One Project</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></div>
             <img class="mockup-1" src="imgs/mockup-placeholder.png" alt="mockup placeholder">
+            <div class="work-para"><h2>That One Project</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></div>
         </div>
         <div class="work-item">
             <span class="helper"></span>
@@ -40,4 +45,15 @@
 <footer>
     <p>Juliana Macedo's Portfolio 2023</p>
 </footer>
+<!-- mobile nav -->
+<script>
+    function myFunction() {
+      var x = document.getElementById("links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+</script>
 </html>
