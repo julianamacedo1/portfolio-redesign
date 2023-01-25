@@ -9,13 +9,13 @@ body {
     margin: 0px;
 }
 h1 {
-    font-family: menco,sans-serif;
-    font-weight: 600;
+    font-family: hoss-round,sans-serif;
+    font-weight: 500;
     font-style: normal;
 }
 h2 {
-    font-family: menco,sans-serif;
-    font-weight: 600;
+    font-family: hoss-round,sans-serif;
+    font-weight: 500;
     font-style: normal;
 }
 h3 {
@@ -29,11 +29,14 @@ p {
     font-style: normal;
 }
 footer {
+    font-family: hoss-round,sans-serif;
+    font-weight: 500;
+    font-style: normal;
     text-align: center;
     padding: 20px;
     background-color: #FFD587;
     margin-top: 100%;
-    border-top: 8px #BED3D6 solid;
+    border-top: 4px #BED3D6 solid;
 }
 
 /* navigation */
@@ -41,22 +44,22 @@ footer {
     background-color: #B2BB8A;
     padding-bottom: 20px;
     padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-bottom: 8px #BED3D6 solid;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-bottom: 4px #BED3D6 solid;
 }
 #links {
     float: right;
 }
 .nav-item {
+    font-family: hoss-round,sans-serif;
+    font-weight: 500;
+    font-style: normal;
     height: 48px;
     background-color: #DED2E2;
-    border: 8px #DCA97C solid;
-    font-family: menco,sans-serif;
-    font-weight: 600;
-    font-style: normal;
+    border: 4px #DCA97C solid;
     font-size: 16px;
-    margin-left: 32px;
+    margin-left: 20px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 40px;
@@ -67,7 +70,7 @@ footer {
     cursor: pointer;
     transition: 0.5s;
     background-color: #DCA97C;
-    border: 8px #DED2E2 solid;
+    border: 4px #DED2E2 solid;
 }
 
 /* ANTI mobile navigation 
@@ -86,7 +89,10 @@ footer {
 
 /* HOMEPAGE content */
 .para {
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 /* work on HOMEPAGE */
@@ -141,7 +147,7 @@ footer {
     text-decoration: none;
 }
 
-/* -------------------------RESPONSIVE SIZES---------------------------- */
+/* -------------------------RESPONSIVE SIZES---------------------------------------------- */
 
 @media screen and (min-width:769px) {
 .topnav a.icon {
@@ -205,7 +211,7 @@ footer {
         position: absolute;
         right: 0;
         top: 0;
-        padding: 38px;
+        padding: 36px;
     }
     .fa-bars:before {
         font-size: 32px;
@@ -215,32 +221,19 @@ footer {
     .topnav {
         overflow: hidden;
         position: relative;
-        margin-bottom: 40px;
         background-color: #B2BB8A;
-        padding: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 36px;
+        padding-right: 36px;
     }
     #links {
         float: left;
         padding-top: 24px;
-        margin-left: -32px;
+        margin-left: -20px;
     }
     .nav-item {
-        height: 50px;
-        background-color: #B2BB8A;
-        font-family: menco,sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 16px;
-        border: 0px;
-        border-bottom: 3px solid #B2BB8A;
-        margin-left: 32px;
-    }
-    .nav-item:hover {
-        background-color: #B2BB8A;
-        cursor: pointer;
-        transition: 0.5s;
-        border-bottom: 3px solid #FFFFFF;
-        color: #FFFFFF;
+        margin-left: 16px;
     }
 
     /* logo */
@@ -251,10 +244,7 @@ footer {
 
     /* home page content */
     .para {
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 0;
+        padding: 36px;
     }
 
     /* work on homepage */
@@ -286,13 +276,175 @@ footer {
 }
 
 /* MOBILE M */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 321px) and (max-width: 375px) {
     
-    
+    /* mobile navigation */
+    .topnav #links {
+        display: none;
+    }
+    .topnav a {
+        color: #1A1A1A;
+        padding: 0;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .icon {
+        color: #1A1A1A;
+    }
+    .topnav a.icon {
+        background: #B2BB8A;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 36px;
+    }
+    .fa-bars:before {
+        font-size: 32px;
+    }
+
+    /* navigation */
+    .topnav {
+        overflow: hidden;
+        position: relative;
+        background-color: #B2BB8A;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    #links {
+        float: left;
+        padding-top: 24px;
+        margin-left: -20px;
+    }
+    .nav-item {
+        margin-left: 16px;
+    }
+
+    /* logo */
+    .logo {
+        width: 56px;
+        height: 56px;
+    }
+
+    /* home page content */
+    .para {
+        padding: 36px;
+    }
+
+    /* work on homepage */
+    .work-section {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .mockup-1 {
+        width: 80%;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0px;
+    }
+    .work-para {
+        width: 80%;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+        padding-bottom: 20px;
+        padding-top: 0px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
+
 }
 
 /* MOBILE S */
 @media screen and (max-width: 320px) {
     
-    
+    /* mobile navigation */
+    .topnav #links {
+        display: none;
+    }
+    .topnav a {
+        color: #1A1A1A;
+        padding: 0;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .icon {
+        color: #1A1A1A;
+    }
+    .topnav a.icon {
+        background: #B2BB8A;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 36px;
+    }
+    .fa-bars:before {
+        font-size: 32px;
+    }
+
+    /* navigation */
+    .topnav {
+        overflow: hidden;
+        position: relative;
+        background-color: #B2BB8A;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    #links {
+        float: left;
+        padding-top: 24px;
+        margin-left: -8px;
+    }
+    .nav-item {
+        margin-left: 8px;
+    }
+
+    /* logo */
+    .logo {
+        width: 56px;
+        height: 56px;
+    }
+
+    /* home page content */
+    .para {
+        padding:36px;
+    }
+
+    /* work on homepage */
+    .work-section {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .mockup-1 {
+        width: 80%;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0px;
+    }
+    .work-para {
+        width: 80%;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+        padding-bottom: 20px;
+        padding-top: 0px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
+
 }
