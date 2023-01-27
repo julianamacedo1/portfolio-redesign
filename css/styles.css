@@ -33,7 +33,7 @@ footer {
     font-weight: 500;
     font-style: normal;
     text-align: center;
-    padding: 20px;
+    padding: 24px;
     background-color: #FFD587;
     margin-top: 100%;
     border-top: 4px #BED3D6 solid;
@@ -59,7 +59,7 @@ footer {
     background-color: #DED2E2;
     border: 4px #DCA97C solid;
     font-size: 16px;
-    margin-left: 20px;
+    margin-left: 8px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 40px;
@@ -72,14 +72,6 @@ footer {
     background-color: #DCA97C;
     border: 4px #DED2E2 solid;
 }
-
-/* ANTI mobile navigation 
-.topnav a.icon {
-    display: none;
-}
-.fa-bars:before {
-    display: none;
-}*/
 
 /* logo */
 .logo {
@@ -147,7 +139,22 @@ footer {
     text-decoration: none;
 }
 
-/* -------------------------RESPONSIVE SIZES---------------------------------------------- */
+/* icons */
+.fa-face-smile-wink:before {
+    font-size: 16px;
+    content: "\f4da";
+    margin-left: 4px;
+    color: #1A1A1A;
+}
+
+.fa-hand-sparkles {
+    font-size: 24px;
+    content: "\e05d";
+    margin-right: 4px;
+    color: #1A1A1A;
+}
+
+/* -------------------------RESPONSIVE SIZES----------------------------------------------------------------------------- */
 
 @media screen and (min-width:769px) {
 .topnav a.icon {
@@ -233,7 +240,7 @@ footer {
         margin-left: -20px;
     }
     .nav-item {
-        margin-left: 16px;
+        margin-left: 8px;
     }
 
     /* logo */
@@ -320,7 +327,7 @@ footer {
         margin-left: -20px;
     }
     .nav-item {
-        margin-left: 16px;
+        margin-left: 8px;
     }
 
     /* logo */
