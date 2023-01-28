@@ -7,6 +7,8 @@ body {
     background-color: #FFFFFF;
     color: #1A1A1A;
     margin: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 h1 {
     font-family: hoss-round,sans-serif;
@@ -37,6 +39,35 @@ footer {
     background-color: #FFD587;
     margin-top: 100%;
     border-top: 4px #BED3D6 solid;
+}
+
+.contact-link {
+    font-family: menco,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #1A1A1A;
+    text-decoration: none;
+    background:
+        linear-gradient(
+        to right,
+        #BED3D6,
+        #BED3D6
+        ),
+        linear-gradient(
+        to right,
+        #FFD587,
+        #B2BB8A,
+        #DED2E2,
+        #DCA97C
+    );
+    background-size: 100% 4px, 0 4px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.contact-link:hover {
+    background-size: 0 3px, 100% 3px;
 }
 
 /* navigation */
@@ -130,50 +161,85 @@ footer {
     margin-bottom: 0;
 }
 
-/* CONTACT PAGE content */
-.contact-item-1 {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 50px;
-    text-decoration: none;
-}
-
 /* icons */
-.fa-face-smile-wink:before {
+.fa-face-smile:before {
     font-size: 16px;
-    content: "\f4da";
+    content: "\f118";
     margin-left: 4px;
     color: #1A1A1A;
 }
 
-.fa-hand-sparkles {
-    font-size: 24px;
-    content: "\e05d";
-    margin-right: 4px;
-    color: #1A1A1A;
+.star-icon {
+    width: 24px;
+    height: 24px;
+    padding-right: 8px;
+    margin-bottom: -4px;
 }
 
 /* -------------------------RESPONSIVE SIZES----------------------------------------------------------------------------- */
 
 @media screen and (min-width:769px) {
-.topnav a.icon {
-    display: none;
-}
-.fa-bars:before {
-    display: none;
-}
-}
-
-/* TABLET */
-@media screen and (min-width:426px) and (max-width: 768px) {
-
+    
     /* ANTI mobile navigation */
     .topnav a.icon {
         display: none;
     }
     .fa-bars:before {
         display: none;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width:426px) and (max-width: 768px) {
+
+    /* mobile navigation */
+    .topnav #links {
+        display: none;
+    }
+    .topnav a {
+        color: #1A1A1A;
+        padding: 0;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .icon {
+        color: #1A1A1A;
+    }
+    .topnav a.icon {
+        background: #B2BB8A;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 36px;
+    }
+    .fa-bars:before {
+        font-size: 32px;
+    }
+
+    /* navigation */
+    .topnav {
+        overflow: hidden;
+        position: relative;
+        background-color: #B2BB8A;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    #links {
+        float: left;
+        padding-top: 24px;
+        margin-left: -20px;
+    }
+    .nav-item {
+        margin-left: 8px;
+    }
+
+    /* home page content */
+    .para {
+        padding: 36px;
     }
 
     /* work on homepage */
@@ -425,7 +491,7 @@ footer {
 
     /* home page content */
     .para {
-        padding:36px;
+        padding: 36px;
     }
 
     /* work on homepage */
